@@ -11,7 +11,7 @@
   <view class="inputText">
 
     <!-- 自动聚焦 绑定input事件 输入框为空时占位符 输入框失去焦点时触发 点击完成时触发 -->
-    <textarea auto-focus bindinput="input" placeholder="请输入要翻译的文本" bindblur="onConfirm" bindconfirm="onConfirm" value="{{query}}"></textarea>
+    <textarea auto-focus bindinput="input" placeholder="请输入要翻译的文本"  bindconfirm="onConfirm" value="{{query}}"></textarea>
 
     <!-- 清除icon -->
     <view bindtap="clearInput">

@@ -1,8 +1,8 @@
 var md5 = require('./md5.js')
 var MD5 = md5.MD5
   
-var appid = xxx //按需填写
-var key = xxx //按需填写
+var appid = 20191129000361510
+var key = '3w3ukuNdj9X14oZh7AHM'
 var salt = Date.now()
 
 var api = function (query,from,to){
