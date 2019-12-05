@@ -1,0 +1,14 @@
+<!-- changeLang.wxml -->
+<view class="container">
+  <view class="title">翻译成</view>
+
+  <view class="list" wx:for="{{list}}" wx:key="index" bindtap="choose" data-chs="{{item.chs}}" data-lang="{{item.lang}}" data-index="{{item.index}}">{{item.chs}}
+    
+    <!-- 选择当前语言 icon -->
+    <icon type="success_no_circle" color="#ddd" wx:if="{{index === curLang.index}}"></icon>
+  </view>
+
+  <view class="copyright">
+    <text>© 自制多语种翻译小程序</text>
+  </view>
+</view>

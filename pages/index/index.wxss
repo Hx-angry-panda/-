@@ -1,0 +1,46 @@
+/**index.wxss**/
+.changeLang{
+  font-size:28rpx;
+  color: #8995a1;
+  background: #fff;
+  padding-bottom: 20rpx;
+}
+
+button{
+  background: #FFFF00;
+  margin: 20rpx 0 0 20rpx;
+}
+.inputText{
+  width: 100%;
+  background: #fff;
+  display: flex;
+}
+textarea{
+  width: 88%;
+  background: #fff;
+  padding: 20rpx;
+  padding-right: 0;
+}
+icon{
+  margin-top: 23rpx;
+}
+.outputText{
+  background: #fff;
+}
+.title{
+  color: #8995a1;
+  border-top: 1px solid #ccc;
+  padding: 20rpx;
+}
+.result{
+  padding: 20rpx 20rpx 60rpx 20rpx;
+}
+.copyright{
+  align-self: center;
+  display: flex;
+  align-items: flex-end;
+  flex: 1; /* flex-grow: 1; */
+  padding-bottom: 15rpx;
+  color: #999;
+  font-size: 25rpx;
+}

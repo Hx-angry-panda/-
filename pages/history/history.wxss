@@ -1,0 +1,19 @@
+.container{
+  padding: 40rpx;
+  padding-right: 30rpx;
+  background: #f5fafe;
+}
+.history{
+  margin-top: 40rpx;
+}
+.title{
+  color: #8995a1;
+  font-size: 25rpx;
+}
+.query{
+  color: #8995a1;
+  font-size: 30rpx;
+}
+.result{
+  font-size: 30rpx;
+}

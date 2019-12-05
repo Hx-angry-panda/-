@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 显示当前语言，点击跳转到 change.wxml -->
+  <navigator url="/pages/changeLang/changeLang" class="changeLang">
+    <button size="mini">翻译到{{curLang.chs}}</button>
+  </navigator>
+
+
+  <!-- 输入框 -->
+  <view class="inputText">
+
+    <!-- 自动聚焦 绑定input事件 输入框为空时占位符 输入框失去焦点时触发 点击完成时触发 -->
+    <textarea auto-focus bindinput="input" placeholder="请输入要翻译的文本" bindblur="onConfirm" bindconfirm="onConfirm" value="{{query}}"></textarea>
+
+    <!-- 清除icon -->
+    <view bindtap="clearInput">
+      <icon type="clear" wx:if="{{clear}}"></icon>
+    </view>
+  </view>
+  
+  <!-- 输出框 -->
+  <view class="outputText">
+
+    <!-- 输出框标题 -->
+    <view class="title">
+      <text>译文</text>
+    </view>
+
+    <!-- 输出结果 -->
+    <view class="result">
+      <text>{{result}}</text>
+    </view>
+  </view>
+
+  <!-- 版权 -->
+  <view class="copyright">
+    <text>© 自制多语种翻译小程序</text>
+  </view>
+
+</view>
+ 
